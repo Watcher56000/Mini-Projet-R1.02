@@ -9,17 +9,23 @@
 <body>
     <h1>Contactez-nous</h1>
     <form>
-        <label for="prenom">Prénom:</label>
-        <input type="text" id="prenom" name="prenom" required><br><br>
+        <label for="info">Veuillez entrer vos informations dans le formulaire ci-dessous:</label>
         
-        <label for="nom">Nom:</label>
-        <input type="text" id="nom" name="nom" required><br><br>
+        <div class="left">
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom" required>
+            
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+            
+            <label for="email">Adresse mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
         
-        <label for="email">Adresse mail:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        <div class="right">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+        </div>
         
         <button type="submit">Envoyer</button>
     </form>

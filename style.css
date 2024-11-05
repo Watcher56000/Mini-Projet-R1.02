@@ -11,7 +11,9 @@ h1 {
 }
 
 form {
-    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -20,19 +22,35 @@ form {
 }
 
 label {
+    width: 100%;
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
 }
 
+.input-group {
+    width: 100%; /* Utiliser toute la largeur disponible */
+    padding: 10px;
+}
+
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
+    width: 100%; /* Utiliser toute la largeur disponible */
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+textarea {
+    width: 50%;
+    height: calc(3 * 40px + 2 * 20px + 2 * 10px); /* Calculer la hauteur totale des trois champs */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    align-self: flex-start; /* Aligner à droite */
 }
 
 button {
@@ -42,7 +60,7 @@ button {
     background-color: #007BFF;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
 }
@@ -56,7 +74,7 @@ button:hover {
     justify-content: space-around;
     align-items: center;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 90%;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
