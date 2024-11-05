@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
+    <link id="style-clair" rel="stylesheet" href="style.css">
+    <link id="style-sombre" rel="stylesheet" href="stylesombre.css" media="none">
 </head>
 <body>
+
+    <a href="#" onclick="document.getElementById('style-clair').media = document.getElementById('style-clair').media === 'none' ? 'all' : 'none';
+                        document.getElementById('style-sombre').media = document.getElementById('style-sombre').media === 'none' ? 'all' : 'none';
+                        return false;" class="toggle-icon"></a>
+
+
     <h1>Contactez-nous</h1>
     <form>
         <label for="info">Veuillez entrer vos informations dans le formulaire ci-dessous:</label>
@@ -31,14 +39,68 @@
     </form>
     
     <div class="renseignement">
+
+
         <div class="left">
             <img src="Photo_iut.jpeg" alt="Photo de l'IUT">
         </div>
+
+
         <div class="right">
-            <p>Adresse de l'IUT:</p>
-            <p>133 B Av. de Rangueil BP 67701, 31077 Toulouse cedex 4, France</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.3380032427362!2d1.466063386829377!3d43.5692860300377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebd0016fa0d9f%3A0x76017489e8fc38c!2sIUT%20Informatique%20de%20Paul%20Sabatier!5e1!3m2!1sfr!2sfr!4v1730797434848!5m2!1sfr!2sfr" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+            <div class="contact-info">
+                <p class="gr">Adresse de l'IUT :</p>
+                <span class="gr">Mail :</span> <a href="mailto:info.contact@iut-tlse3.fr" class="gr">info.contact@iut-tlse3.fr</a> 
+                <span class="gr">Téléphone :</span> <a href="tel:+33562258761" class="gr">05 62 25 87 61</a>
+
+
+                <p>133 B Av. de Rangueil BP 67701, 31077 Toulouse cedex 4, France </p>
+
+
+
+
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.3380032427362!2d1.466063386829377!3d43.5692860300377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebd0016fa0d9f%3A0x76017489e8fc38c!2sIUT%20Informatique%20de%20Paul%20Sabatier!5e1!3m2!1sfr!2sfr!4v1730797434848!5m2!1sfr!2sfr"
+                width="800" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>         
     </div>
+
+
+    <footer>
+        <div class="footer-plan">
+            <h3>Plan du site</h3>
+            <div class="link-columns">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Présentation du BUT</a></li>
+                    <li><a href="#">Compétence 1</a></li>
+                    <li><a href="#">Compétence 2</a></li>
+                    <li><a href="#">Compétence 3</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Compétence 4</a></li>
+                    <li><a href="#">Compétence 5</a></li>
+                    <li><a href="#">Compétence 6</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+            <div class="footer-rgpd">
+                <a href="https://www.cnil.fr/" target="_blank">CNIL - RGPD</a>
+            </div>
+
+            <div class="footer-entreprise">
+                <h3>Equipe blanche</h3>
+                <p>Alexandre Anton</p>
+                <p>Loic Cammarata</p>
+                <p>Roman Disdier</p>
+                <p>Mathis Belloc</p>
+            </div>
+
+        </div>
+    </footer>
+    
+
+
 </body>
 </html>
