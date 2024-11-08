@@ -2,21 +2,25 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1e1e1e;
-    color: #e0e0e0;
+    background-color: #f4f4f4;
 }
 
 h1 {
     text-align: center;
-    color: #ffffff;
+    color: #333;
 }
 
 .toggle-icon {
-    background-image: url('soleil.png'); 
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-image: url('../images/lune.png');
     background-size: cover;
     background-position: center;
 }
-
 
 form {
     display: flex;
@@ -24,9 +28,9 @@ form {
     max-width: 90%;
     margin: 20px auto;
     padding: 20px;
-    background-color: #333;
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 label {
@@ -34,7 +38,6 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #e0e0e0;
 }
 
 .input-group {
@@ -48,10 +51,8 @@ textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #555;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #2a2a2a;
-    color: #e0e0e0;
 }
 
 textarea {
@@ -59,10 +60,8 @@ textarea {
     height: calc(3 * 40px + 2 * 20px + 2 * 10px);
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #555;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #2a2a2a;
-    color: #e0e0e0;
     align-self: flex-start;
 }
 
@@ -70,7 +69,7 @@ button {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #0056b3;
+    background-color: #007BFF;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -79,7 +78,7 @@ button {
 }
 
 button:hover {
-    background-color: #004080;
+    background-color: #0056b3;
 }
 
 .renseignement {
@@ -89,9 +88,9 @@ button:hover {
     margin: 20px auto;
     max-width: 90%;
     padding: 20px;
-    background-color: #333;
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .renseignement .left,
@@ -129,7 +128,6 @@ div.renseignement {
 
 .gr {
     font-weight: bold;
-    color: #ffffff;
 }
 
 .contact-info {
@@ -144,15 +142,18 @@ div.renseignement {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 15px;
-    color: #e0e0e0;
 }
 
 .contact-info span {
     margin-left: 5em;
 }
 
+.gr {
+    font-weight: bold;
+}
+
 .renseignement .right p a {
-    color: #66b2ff;
+    color: #007BFF;
     text-decoration: none;
     margin: 0 5px;
 }
@@ -161,23 +162,21 @@ label[for="info"] {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 35px;
-    color: #e0e0e0;
 }
 
 footer {
     display: flex;
-    background-color: #1e1e1e;
+    background-color: #f4f4f4;
     padding: 10px;
     margin-top: 20px;
-    border-top: 2px solid #444;
+    border-top: 2px solid #2c2b2b;
     font-size: 14px;
-    color: #e0e0e0;
 }
 
 .footer-section {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
     max-width: 90%;
     margin: auto;
 }
@@ -190,22 +189,20 @@ footer {
     flex: 0.5;
     text-align: center;
 }
-
 .footer-rgpd a {
     margin-top: 8em;
 }
-
 .footer-entreprise {
     flex: 1;
     text-align: right;
 }
+
 
 .footer-plan h3,
 .footer-entreprise h3 {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 8px;
-    color: #ffffff;
 }
 
 .footer-plan .link-columns {
@@ -224,13 +221,13 @@ footer {
 }
 
 .footer-plan .link-columns ul li a {
-    color: #66b2ff;
+    color: #007BFF;
     text-decoration: none;
     font-size: 14px;
 }
 
 .footer-rgpd a {
-    color: #66b2ff;
+    color: #007BFF;
     text-decoration: none;
     font-size: 14px;
     display: block;
@@ -239,5 +236,136 @@ footer {
 .footer-entreprise p {
     margin: 3px 0;
     font-size: 14px;
-    color: #e0e0e0;
 }
+
+
+
+
+
+
+
+
+
+/* Styles pour la section présentation du BUT */
+.presentation-but {
+    margin: 40px auto;
+    max-width: 90%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.presentation-but h1 {
+    text-align: center;
+    color: #d32f2f; /* Couleur rouge pour le titre */
+}
+
+.presentation-but h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Disposition texte et tableau */
+.content-section {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.content-section .text {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.table-container {
+    flex: 1;
+    overflow-x: auto;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.table-container th {
+    background-color: #d32f2f;
+    color: #fff;
+}
+
+
+
+
+
+
+/* Section des compétences */
+.competence-section {
+    margin-top: 50px;
+}
+
+.competence-block img {
+    width: 800px;
+    height: 600px;
+}
+
+.competence-section h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.competence-container {
+    display: flex;
+    gap: 20px;
+}
+
+.competence-block {
+    flex: 1;
+    background-color: #fbe9e7; /* Couleur de fond pour les descriptions */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.competence-block h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.competence-block ul {
+    list-style: none;
+    padding: 0;
+}
+
+.competence-block li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.competence-blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex: 1;
+}
+
+.competence-item {
+    background-color: #fbe9e7;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
