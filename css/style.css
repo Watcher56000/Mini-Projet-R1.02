@@ -148,6 +148,7 @@ div.renseignement {
     margin-left: 5em;
 }
 
+
 .gr {
     font-weight: bold;
 }
@@ -158,7 +159,7 @@ div.renseignement {
     margin: 0 5px;
 }
 
-label[for="info"] {
+.instruction {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 35px;
