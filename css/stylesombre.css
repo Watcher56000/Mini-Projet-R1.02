@@ -12,11 +12,10 @@ h1 {
 }
 
 .toggle-icon {
-    background-image: url('../images/soleil.png'); 
+    background-image: url('../images/soleil.png'); /* Icône de soleil pour le mode sombre */
     background-size: cover;
     background-position: center;
 }
-
 
 form {
     display: flex;
@@ -30,11 +29,8 @@ form {
 }
 
 label {
-    width: 100%;
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
     color: #e0e0e0;
+    font-weight: bold;
 }
 
 .input-group {
@@ -45,37 +41,20 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #555;
-    border-radius: 4px;
     background-color: #2a2a2a;
     color: #e0e0e0;
+    border: 1px solid #555;
 }
 
 textarea {
-    width: 50%;
-    height: calc(3 * 40px + 2 * 20px + 2 * 10px);
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #555;
-    border-radius: 4px;
     background-color: #2a2a2a;
     color: #e0e0e0;
-    align-self: flex-start;
+    border: 1px solid #555;
 }
 
 button {
-    display: block;
-    width: 100%;
-    padding: 10px;
     background-color: #0056b3;
     color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
 }
 
 button:hover {
@@ -83,161 +62,61 @@ button:hover {
 }
 
 .renseignement {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px auto;
-    max-width: 90%;
-    padding: 20px;
     background-color: #333;
-    border-radius: 8px;
+    color: #e0e0e0;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-.renseignement .left,
-.renseignement .right {
-    flex: 1;
-    margin: 10px;
-}
-
-form div.right {
-    width: 35em;
-    margin-left: 5em;
-}
-
-textarea#message {
-    width: 100%;
-}
-
-form div.left {
-    width: 50em;
-}
-
-.renseignement img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-div.left img {
-    width: 100%;
-    height: 28em;
-}
-
-div.renseignement {
-    height: 30em;
-}
-
-.gr {
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.contact-info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.contact-info p {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 15px;
+.contact-info p, .footer-entreprise p {
     color: #e0e0e0;
 }
 
-.contact-info span {
-    margin-left: 5em;
-}
-
-.renseignement .right p a {
-    color: #66b2ff;
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-label[for="info"] {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 35px;
-    color: #e0e0e0;
-}
-
+/* Style du footer en mode sombre */
 footer {
-    display: flex;
     background-color: #1e1e1e;
-    padding: 10px;
-    margin-top: 20px;
-    border-top: 2px solid #444;
-    font-size: 14px;
     color: #e0e0e0;
+    border-top: 2px solid #444;
 }
 
-.footer-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 90%;
-    margin: auto;
+.footer-plan .link-columns ul li a, .footer-rgpd a {
+    color: #66b2ff;
 }
 
-.footer-plan {
-    flex: 1;
-}
-
-.footer-rgpd {
-    flex: 0.5;
-    text-align: center;
-}
-
-.footer-rgpd a {
-    margin-top: 8em;
-}
-
-.footer-entreprise {
-    flex: 1;
-    text-align: right;
-}
-
-.footer-plan h3,
-.footer-entreprise h3 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 8px;
+.footer-plan h3, .footer-entreprise h3 {
     color: #ffffff;
 }
 
-.footer-plan .link-columns {
-    display: flex;
-    gap: 20px;
+/* Styles pour la section présentation du BUT */
+.presentation-but {
+    background-color: #333;
+    color: #e0e0e0;
 }
 
-.footer-plan .link-columns ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.presentation-but h1 {
+    color: #e57373;
 }
 
-.footer-plan .link-columns ul li {
-    margin: 3px 0;
+.presentation-but h2 {
+    color: #e0e0e0;
 }
 
-.footer-plan .link-columns ul li a {
-    color: #66b2ff;
-    text-decoration: none;
-    font-size: 14px;
+.table-container th {
+    background-color: #e57373;
+    color: #ffffff;
 }
 
-.footer-rgpd a {
-    color: #66b2ff;
-    text-decoration: none;
-    font-size: 14px;
-    display: block;
+/* Styles pour la section des compétences */
+.competence-block {
+    background-color: #444;
+    color: #e0e0e0;
 }
 
-.footer-entreprise p {
-    margin: 3px 0;
-    font-size: 14px;
+.competence-item {
+    background-color: #444;
+    color: #e0e0e0;
+    
+}
+
+.competence-section h3 {
     color: #e0e0e0;
 }

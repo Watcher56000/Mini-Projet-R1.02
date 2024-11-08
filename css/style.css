@@ -276,6 +276,11 @@ footer {
 }
 
 .content-section .text {
+    display: flex;               /*    Enlever les 5 premieres ligne si on veut remonter le texte    */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40em;
     flex: 1;
     font-size: 16px;
     line-height: 1.6;
