@@ -258,7 +258,7 @@ footer {
 
 .presentation-but h1 {
     text-align: center;
-    color: #d32f2f; /* Couleur rouge pour le titre */
+    color: #d32f2f; 
 }
 
 .presentation-but h2 {
@@ -266,6 +266,8 @@ footer {
     color: #333;
     margin-bottom: 20px;
 }
+
+
 
 /* Disposition texte et tableau */
 .content-section {
