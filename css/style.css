@@ -91,7 +91,7 @@ button:hover {
 
 
 /*  ==================================================================================================
-                                            SECTION CONTACT IMAGE ET MAPS  
+                                            SECTION CONTACT IMAGE ET MAPS 
     ================================================================================================== */  
 
 
@@ -188,7 +188,7 @@ div.renseignement {
 
 footer {
     display: flex;
-    background-color: #f4f4f4;
+    background-color: #ff2828;
     padding: 10px;
     margin-top: 20px;
     border-top: 2px solid #2c2b2b;
@@ -243,16 +243,18 @@ footer {
 }
 
 .footer-plan .link-columns ul li a {
-    color: #007BFF;
+    color: #ffffff;
     text-decoration: none;
     font-size: 14px;
+    text-decoration: underline;
 }
 
 .footer-rgpd a {
-    color: #007BFF;
+    color: #ffffff;
     text-decoration: none;
     font-size: 14px;
     display: block;
+    text-decoration: underline;
 }
 
 .footer-entreprise p {
