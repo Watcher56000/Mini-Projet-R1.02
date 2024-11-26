@@ -10,14 +10,173 @@ h1 {
     color: #333;
 }
 
+
+/*  ==================================================================================================
+                                            SECTION Header 
+    ================================================================================================== */  
+
+/* Couleurs de fond */
+.couleurdefond {
+    background-color: #ff0033;
+  }
+  
+  /* Logos */
+  #logo1 {
+    margin: 0.5% 0 0 2%;
+    width: 7.5%;
+  }
+  
+  #logo2 {
+    float: right;
+    margin: 0.5% 1% 0 0;
+    width: 12.5%;
+  }
+  
+  /* En-tête */
+  header {
+    position: relative;
+    top: 1px;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #262626;
+  }
+  
+  /* Liste principale */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+  }
+  
+  nav li {
+    margin-right: 15px;
+  }
+  
+  /* Liens */
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 80%;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Sous-menu */
+  #elem_nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #elem_nav ul li {
+    width: 20%;
+  }
+  
+  #elem_nav ul li > ul {
+    display: none;
+    flex-direction: column;
+  }
+  
+  #elem_nav ul li > ul li {
+    width: 100%;
+  }
+  
+  #elem_nav ul li:hover > ul {
+    display: flex;
+  }
+  
+  #elem_nav a {
+    display: block;
+    background: #262626;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 100%;
+  }
+  
+  #elem_nav a:hover {
+    background: #262626;
+    color: #ff0033;
+  }
+  
+  /* Sous-menu pour "Compétence" */
+  #elem_nav #comp ul {
+    position: absolute;
+    width: 20%;
+  }
+  
+  #elem_nav #comp li > a {
+    background: #262626;
+    color: #fff;
+  }
+  
+  #elem_nav #comp li > a:hover {
+    color: #ff0033;
+  }
+  
+  #elem_nav #comp > a:after {
+    content: '+';
+    padding-left: 5px;
+  }
+  
+  /* Media Queries */
+  @media only screen and (max-width: 1030px) {
+    #logo1 {
+        width: 8%;
+    }
+    
+    #logo2 {
+        width: 24%;
+    }
+    
+    nav ul {
+        padding: 1em;
+    }
+  
+    nav li {
+        font-size: 70%;
+    }
+  
+    #elem_nav a {
+        font-weight: bold;
+    }
+  
+    #elem_nav #comp ul {
+        width: 30%;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    nav li {
+        font-size: 50%;
+    }
+  
+    #elem_nav a {
+        font-size: 12px;
+    }
+  
+    #elem_nav #comp ul {
+        width: 30%;
+    }
+  }
+  
+
 /*  ==================================================================================================
                                             SECTION Icone Mode sombre 
     ================================================================================================== */  
 
 .toggle-icon {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 30px;
+    right: 260px;
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -188,7 +347,7 @@ div.renseignement {
 
 footer {
     display: flex;
-    background-color: #ff2828;
+    background-color: #ff0033;
     padding: 10px;
     margin-top: 20px;
     border-top: 2px solid #2c2b2b;
@@ -401,6 +560,10 @@ footer {
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
+
+
+
 
 
 

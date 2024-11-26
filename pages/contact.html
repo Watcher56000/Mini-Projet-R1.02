@@ -10,9 +10,37 @@
 </head>
 <body>
 
-    <a href="#" onclick="document.getElementById('style-clair').media = document.getElementById('style-clair').media === 'none' ? 'all' : 'none';
-                        document.getElementById('style-sombre').media = document.getElementById('style-sombre').media === 'none' ? 'all' : 'none';
-                        return false;" class="toggle-icon"></a>
+    <header>
+        <div class="couleurdefond">
+            <img src="../images/NouvLogo.jpg" id="logo1" alt="logo de l'iut paul sabatier de toulouse">
+            
+            <a href="#" onclick="document.getElementById('style-clair').media = document.getElementById('style-clair').media === 'none' ? 'all' : 'none';
+            document.getElementById('style-sombre').media = document.getElementById('style-sombre').media === 'none' ? 'all' : 'none';
+            return false;" class="toggle-icon"></a>
+
+            <img src="../images/logo-ups.jpg" id="logo2" alt="logo de l'université paul sabatier de toulouse">
+        </div>
+        
+        <nav id="elem_nav">
+            <ul id="liste">
+                <li><a href="../page_accueil.html" target="blank">Accueil</a></li>
+                <li><a href="../pages/page_présentation.html" target="blank">Présentation du BUT</a></li>
+                <li id="comp">
+                    <a>Compétence</a>
+                    <ul>
+                        <li><a href="page_competence1.html" target="blank">Réaliser</a></li>
+                        <li><a href="page_competence2.html" target="blank">Optimiser</a></li>
+                        <li><a href="page_competence3.html" target="blank">Administrer</a></li>
+                        <li><a href="page_competence4.html" target="blank">Gérer</a></li>
+                        <li><a href="page_competence5.html" target="blank">Conduire</a></li>
+                        <li><a href="page_competence6.html" target="blank">Collaborer</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/contact.html" target="blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
 
 
     <h1>Contactez-nous</h1> 
@@ -90,7 +118,7 @@
             </div>
 
             <div class="footer-entreprise">
-                <h3>Equipe blanche</h3>
+                <h3>Equipe ALR</h3>
                 <p>Alexandre Anton</p>
                 <p>Loic Cammarata</p>
                 <p>Roman Disdier</p>
