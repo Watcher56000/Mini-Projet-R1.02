@@ -12,7 +12,7 @@ h1 {
 }
 
 .toggle-icon {
-    background-image: url('../images/soleil.png'); /* Icône de soleil pour le mode sombre */
+    background-image: url('../images/soleil.png'); 
     background-size: cover;
     background-position: center;
 }
